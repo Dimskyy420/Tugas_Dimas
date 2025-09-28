@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 
+  
+  <title>Profil Diri</title>
+  <style>
+    .container {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .video {
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .container img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .profil {
+      margin-right: 20px;
+      width: 120px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: auto;
+      margin-top: 10px;
+    }
+
+    th, td {
+      padding: 6px 15px;
+      text-align: left;
+    }
+
+    th {
+      font-weight: bold;
+    }
+
+    .hubungi-saya {
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Judul Halaman -->
+  <h1>Profil Pribadi</h1>
+
+  <!-- div untuk mengelompokkan foto profil dan video -->
+  <div class="container"> 
+    <div class="profil">
+      <!-- h1 sebagai sub-judul -->
+      <p>Foto Profil</p>
+      <!-- img untuk menampilkan gambar profil -->
+      <img src="Screenshot 2025-08-06 221625.png" alt="Foto Profil">
+    </div>
+
+    <div class="video">
+      <!-- h1 sebagai sub-judul -->
+      <p>Video Perkenalan</p>
+      <!-- video untuk menampilkan media video -->
+      <video width="320" height="240" controls>
+        <source src="KERA SAKTI OPENING With Subtitle.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+
+  <!-- Bagian tentang saya -->
+  <div class="tentang-saya">
+    <h1>Tentang Saya</h1>
+    <p>Halo! Saya seorang pengembang web antusias dengan passion di bidang teknologi dan desain kreatif.</p>
+  </div>
+
+  <!-- Table untuk menampilkan data keterampilan -->
+  <div class="keterampilan">
+    <h1>Keterampilan</h1>
+    <table>
+      <!-- tr = table row, th = table header -->
+      <tr>
+        <th>Keterampilan</th>
+        <th>Tingkat</th>
+      </tr>
+      <!-- td = table data -->
+      <tr>
+        <td>HTML/CSS</td>
+        <td>Mahir</td>
+      </tr>
+      <tr>
+        <td>JavaScript</td>
+        <td>Menengah</td>
+      </tr>
+      <tr>
+        <td>Python</td>
+        <td>Pemula</td>
+      </tr>
+    </table>
+  </div>
+
+  <!-- Form untuk menghubungi -->
+  <div class="hubungi-saya">
+    <h1>Hubungi Saya</h1>
+    <!-- form digunakan untuk input data dari user -->
+    <form action="input" method="post">
+      <!-- input type text -->
+      <label for="name">Nama:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <!-- input type email -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <!-- textarea untuk input pesan panjang -->
+      <label for="message">Pesan:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+      <!-- button untuk submit form -->
+      <button type="submit">Kirim Pesan</button>
+    </form>
+  </div>
+
+  <!-- Link ke media sosial dengan anchor <a> -->
+  <div class="media-sosial">
+    <h1>Media Sosial</h1>
+    <!-- a digunakan untuk hyperlink -->
+    <a href="https://www.facebook.com/yourprofile" target="_blank">Facebook</a> |
+    <a href="https://www.twitter.com/yourprofile" target="_blank">Twitter</a> |
+    <a href="https://www.instagram.com/yourprofile" target="_blank">Instagram</a> |
+    <a href="https://www.linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+  </div>
+
+</body>
+</html>
